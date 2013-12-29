@@ -1,0 +1,12 @@
+li.archive-entry {
+  &:hover {
+    font-weight: 600;
+  }
+
+  time {
+    color: #aaaaaa;
+    font-size: 80%;
+    float: right;
+  }
+}
+

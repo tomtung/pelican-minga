@@ -1,0 +1,38 @@
+#post-list {
+  margin-left:0;
+  & > li {
+    list-style:none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+}
+
+.post-header {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  
+  h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  time {
+    color: #aaaaaa;
+    font-size: 80%;
+  }
+
+  .tag-row-icon {
+    font-size: 80%;
+  }
+
+  .tag-row {
+    margin-top:5px;
+  }
+}
+
+.post-content {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}

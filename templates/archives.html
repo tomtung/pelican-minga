@@ -1,11 +1,22 @@
 {% extends "base.html" %}
+{% block title %}Archive - {{ SITENAME }}{% endblock %}
 {% block content %}
-<h1>Archives for {{ SITENAME }}</h1>
-
-<dl>
-{% for article in dates %}
-    <dt>{{ article.locale_date }}</dt>
-    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-{% endfor %}
-</dl>
+<section id="content">
+	<h2>Archive</h2>
+	<ul>
+	{% for year_group in dates|groupby('date.year')|reverse %}
+	<li>
+		<h3>{{ year_group.grouper }}</h3>
+		<ul>
+			{% for article in year_group.list %}
+			<li class="archive-entry">
+				<a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+				<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+			</li>
+			{% endfor %}
+		</ul>
+	</li>
+	{% endfor %}
+	</ul>
+</section>
 {% endblock %}

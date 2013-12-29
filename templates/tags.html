@@ -1,13 +1,18 @@
 {% extends "base.html" %}
+{% block title %}Tags Cloud - {{ SITENAME }}{% endblock %}
 {% block content %}
-<ul>
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-{% for tag in tag_cloud %}
-<li class="tag-{{ tag.1 }}">
-	<a href="{{ SITEURL }}/{{ tag.0.url }}">
-		<i class="icon-tag icon-large"></i>{{ tag.0|e }}
-	</a>
-</li>
-{% endfor %}
-</ul>
+<section id="content">
+	<h2>Tags Cloud</h2>
+	<ul class="tagcloud">
+		{% for tag in tag_cloud %}
+		<li>
+			<div class="tag tag-{{ tag.1 }} default oval btn">
+				<a href="{{ SITEURL }}/{{ tag.0.url }}">
+					<i class="icon-tag icon-large"></i>{{ tag.0|e }}
+				</a>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+</section>
 {% endblock %}

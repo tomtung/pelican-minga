@@ -1,0 +1,9 @@
+table.footnote {
+  width: auto;
+  margin: 0;
+  border-width: 0;
+
+  thead th, tbody td, tr td {
+    border-width: 0;
+  }
+}

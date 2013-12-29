@@ -1,0 +1,22 @@
+ul.tagcloud {
+  list-style: none;
+  margin: 30px;
+  padding: 5px;
+
+  li {
+    display: inline-block;
+    .tag a {
+      font-weight: 300;
+      margin: 0;
+    }
+
+    @for $i from 1 through 4 {
+      .tag-#{$i} {
+        font-size: #{190% - ($i - 1)*30%};
+        a {
+          padding: #{5px - ($i - 1)*1.5px} #{10px - ($i - 1)*1.5px};
+        }
+      }
+    }
+  }
+}

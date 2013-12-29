@@ -1,40 +1,38 @@
-### What is Gum?
+# Minga
 
-Gum is a clean and responsive theme for [Pelican](https://github.com/getpelican/pelican), based on the [Gumby Framework](http://gumbyframework.com/docs).
-
-### Requirements
-
-* [Pelican](https://github.com/getpelican/pelican)
+Minga is a simplistic and responsive theme for [Pelican](https://github.com/getpelican/pelican), based on the [Gumby Framework](http://gumbyframework.com/docs). It is a fork of the [Gum](https://github.com/getpelican/pelican-themes/tree/master/gum) theme by [@uknick](https://github.com/uknick), with quite a lot of tweaks and clean-ups, as well as some new features.
 
 ### Configuration
 
-* Edit your settings file to include the following if desired (any values left blank won't show up in the theme):
+Edit your settings file to include the following if desired (any values left blank won't show up in the theme):
 
 ```
 GITHUB_URL = ''
 TWITTER_URL = ''
 FACEBOOK_URL = ''
 GOOGLEPLUS_URL = ''
+DOUBAN_URL = ''
+WEIBO_URL = ''
 ```
 
 This theme uses the latest Google Analytics code, which will be included when the following values are filled out appropriately.
 
 ```
-GOOGLE_ANALYTICS_ID = ''
-GOOGLE_ANALYTICS_SITENAME = ''
+GOOGLE_ANALYTICS = 'UA-XXXX-YYYY'
 ```
 
+You can also enable MathJax support by setting the following variable:
+```
+ENABLE_MATHJAX = True
+```
 
-### Screenshot ###
+### Development
 
-![screenshot](screenshot.png)
+Please do not edit `static/css/gumby.css` directly. Instead, edit `sass/_custom.scss` instead, and use [Compass](http://compass-style.org/) to compile:
 
-### Credits / Thanks
-
- * Alexis Metaireau / Pelican
- * Digital Surgeons / Gumby Framework
- * Twitter Bootstrap
- * traeblain for his [makefile](https://gist.github.com/traeblain/4252511) gist for building Pelican on Windows
+```
+compass compile
+```
 
 **MIT Open Source License**
 

@@ -1,0 +1,143 @@
+#content-container {
+  margin: auto;
+  max-width: 750px;
+}
+
+#content {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/* Navigation Bar
+--------------------------------------------------------- */
+
+#navigation {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
+#navbar-title a {
+  float: left;
+  display: block;
+  padding: 0 16px;
+  white-space: nowrap;
+  color: white;
+  height: 60px;
+  line-height: 58px;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+#navbar-items {
+  float: right;
+  margin-right: 15px;
+}
+
+.navbar ul li.active > a {  
+  background: #393a3c;
+}
+
+/* Footer
+--------------------------------------------------------- */
+
+#page-footer-container {
+  background: #eee;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 5px solid #3498DB;
+  
+  #page-footer {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 20px;
+
+    #about {
+      font-size:14px;
+      margin-bottom:10px;
+    }
+
+    #license-image-80x15 {
+      border-width: 0;
+      position: relative;
+      top: 3px;
+    }
+
+    #socbtns {
+      display: inline-block;
+      padding: 15px 0;
+      overflow: hidden;
+      float: right;
+
+      li {
+        float: left;
+      }
+
+      li + li {
+        border-left: 1px solid white;
+      }
+
+      .btn {
+        a {
+          font-size: $base-font-size * 0.8;
+          font-size: 0.8em;
+        }
+      }
+
+      .btn.twitter {
+        background: #00aced;
+        border: 1px solid #00aced;
+        &:hover {
+          background: #21c2ff;
+        }
+        &:active {
+          background: #0087ba;
+        }
+      }
+
+      .btn.facebook {
+        background: #3b5998;
+        border: 1px solid #3b5998;
+        &:hover {
+          background: #4c70ba;
+        }
+        &:active {
+          background: #2d4373;
+        }
+      }
+
+      .btn.douban {
+        background: #1f8f26;
+        border: 1px solid #1f8f26;
+        &:hover {
+          background: #52c75a;
+        }
+        &:active {
+          background: #2c6b30;
+        }
+      }
+
+      .btn.weibo {
+        background: #eb1827;
+        border: 1px solid #eb1827;
+        &:hover {
+          background: #f55060;
+        }
+        &:active {
+          background: #b03a45;
+        }
+      }
+    }
+
+  }
+}
+
+
+/* Content title
+--------------------------------------------------------- */
+.content-title {
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-size: 2rem;
+}

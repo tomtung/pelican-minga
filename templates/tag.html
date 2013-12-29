@@ -1,2 +1,11 @@
 {% extends "index.html" %}
-{% block title %}{{ SITENAME }} - {{ tag|e }}{% endblock %}
+{% block title %}{{ tag|e }} - {{ SITENAME }}{% endblock %}
+{% block content_title %}
+<h2 class="content-title">Articles tagged as
+	<div class="tag default oval btn">
+		<a href="{{ SITEURL }}/{{ tag.url }}">
+			<i class="icon-tag icon-large"></i>{{ tag|e }}
+		</a>
+	</div>
+</h2>
+{% endblock %}
