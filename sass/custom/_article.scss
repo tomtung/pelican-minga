@@ -14,3 +14,12 @@ a.fn-backref {
 		color: $body-link-hover-color;
 	}
 }
+
+dd {
+  margin-left: 2em;
+}
+
+.post-content ul {
+  list-style-type: disc;
+  margin-left: 30px;
+}
