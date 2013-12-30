@@ -2,6 +2,10 @@
 
 Minga is a simplistic and responsive theme for [Pelican](https://github.com/getpelican/pelican), based on the [Gumby Framework](http://gumbyframework.com/docs). It is a fork of the [Gum](https://github.com/getpelican/pelican-themes/tree/master/gum) theme by [@uknick](https://github.com/uknick), with quite a lot of tweaks and clean-ups, as well as some new features.
 
+### Screenshot ###
+
+![screenshot](screenshot.png)
+
 ### Configuration
 
 Edit your settings file to include the following if desired (any values left blank won't show up in the theme):
