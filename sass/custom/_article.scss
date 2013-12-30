@@ -1,4 +1,4 @@
-table.footnote {
+table.footnote, table.citation {
   width: auto;
   margin: 0;
   border-width: 0;
@@ -6,4 +6,11 @@ table.footnote {
   thead th, tbody td, tr td {
     border-width: 0;
   }
+}
+
+a.fn-backref {
+	color: $body-link-color;
+	&:hover {
+		color: $body-link-hover-color;
+	}
 }

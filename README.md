@@ -28,7 +28,7 @@ ENABLE_MATHJAX = True
 
 ### Development
 
-Please do not edit `static/css/gumby.css` directly. Instead, edit `sass/_custom.scss` instead, and use [Compass](http://compass-style.org/) to compile:
+Please do not edit `static/css/gumby.css` directly. Instead, edit `sass/_custom.scss`, and use [Compass](http://compass-style.org/) to compile:
 
 ```
 compass compile
