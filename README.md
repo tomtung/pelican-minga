@@ -6,6 +6,8 @@ Minga is a simplistic and responsive theme for [Pelican](https://github.com/getp
 
 ![screenshot](screenshot.png)
 
+A live demo is available [here](http://tomtung.github.io/pelican-minga).
+
 ### Configuration
 
 Edit your settings file to include the following if desired (any values left blank won't show up in the theme):
