@@ -1,0 +1,6 @@
+[submodule "source/pelican-minga"]
+	path = source/pelican-minga
+	url = https://github.com/tomtung/pelican-minga.git
+[submodule "src/pelican-minga"]
+	path = src/pelican-minga
+	url = https://github.com/tomtung/pelican-minga.git
