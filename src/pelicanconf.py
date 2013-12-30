@@ -50,6 +50,8 @@ TAGS_SAVE_AS = 'tags/index.html'
 ARCHIVES_URL = '/archive'
 ARCHIVES_SAVE_AS = 'archive/index.html'
 
+DISPLAY_CATEGORIES_ON_MENU = False
+
 ENABLE_MATHJAX = True
 DOCUTILS_SETTINGS = {'math_output':'MathJax'}
 
