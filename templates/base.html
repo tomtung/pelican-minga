@@ -84,14 +84,14 @@
           <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
         {% endfor %}
       {% endif %}
-      {% if FEED_ALL_ATOM %}
-        <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Feed</a></li>
-      {% elif FEED_ALL_RSS %}
-        <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">Feed</a></li>
-      {% elif FEED_ATOM %}
+      {% if FEED_ATOM %}
         <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}">Feed</a></li>
       {% elif FEED_RSS %}
         <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}">Feed</a></li>
+      {% elif FEED_ALL_ATOM %}
+        <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Feed</a></li>
+      {% elif FEED_ALL_RSS %}
+        <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">Feed</a></li>
       {% endif %}
     </ul>
   </div>
