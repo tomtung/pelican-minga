@@ -66,10 +66,10 @@
     <span id="navbar-title"><a href="{{ SITEURL }}"> {{ SITENAME }} </a></span>
     <ul id="navbar-items">
       {% if ARCHIVES_URL %}
-        <li {% if output_file == ARCHIVES_SAVE_AS %} class="active"{% endif %}><a href="{{ ARCHIVES_URL }}">Archive</a></li>
+        <li {% if output_file == ARCHIVES_SAVE_AS %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archive</a></li>
       {% endif %}
       {% if TAGS_URL %}
-        <li {% if output_file == TAGS_SAVE_AS %} class="active"{% endif %}><a href="{{ TAGS_URL }}">Tags</a></li>
+        <li {% if output_file == TAGS_SAVE_AS %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ TAGS_URL }}">Tags</a></li>
       {% endif %}
       {% for title, link in MENUITEMS %}
           <li><a href="{{ link }}">{{ title }}</a></li>
