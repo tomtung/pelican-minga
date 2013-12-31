@@ -44,10 +44,10 @@ PATH = 'content'
 THEME = 'pelican-minga'
 OUTPUT_PATH = '../'
 
-TAGS_URL = '/tags'
+TAGS_URL = 'tags'
 TAGS_SAVE_AS = 'tags/index.html'
 
-ARCHIVES_URL = '/archive'
+ARCHIVES_URL = 'archive'
 ARCHIVES_SAVE_AS = 'archive/index.html'
 
 DISPLAY_CATEGORIES_ON_MENU = False
